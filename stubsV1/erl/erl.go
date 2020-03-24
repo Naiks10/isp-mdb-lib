@@ -2,12 +2,11 @@ package erl
 
 import (
 	"encoding/xml"
-	"time"
 )
 
 type StringWithLastModified struct {
-	Value        string    `xml:",chardata"`
-	Lastmodified time.Time `xml:"last_modified,attr"`
+	Value        string `xml:",chardata"`
+	Lastmodified string `xml:"last_modified,attr"`
 }
 
 type PersonsIncoming struct {
@@ -31,10 +30,10 @@ type Citizen struct {
 }
 
 type CitizenName struct {
-	Surname      string    `xml:"surname,omitempty"`
-	Firstname    string    `xml:"firstname,omitempty"`
-	Patronymic   string    `xml:"patronymic,omitempty"`
-	Lastmodified time.Time `xml:"last_modified,attr"`
+	Surname      string `xml:"surname,omitempty"`
+	Firstname    string `xml:"firstname,omitempty"`
+	Patronymic   string `xml:"patronymic,omitempty"`
+	Lastmodified string `xml:"last_modified,attr"`
 }
 
 type IdentityDocuments struct {
@@ -42,12 +41,12 @@ type IdentityDocuments struct {
 }
 
 type Document struct {
-	DoctypePk      string    `xml:"doctype_pk,omitempty"`
-	Serial         string    `xml:"serial,omitempty"`
-	Number         string    `xml:"number,omitempty"`
-	DocIssuedate   string    `xml:"doc_issuedate,omitempty"`
-	DocIssuePlace  string    `xml:"doc_issue_place,omitempty"`
-	DocauthorityPk string    `xml:"docauthority_pk,omitempty"`
-	IsDropped      string    `xml:"is_dropped,omitempty"`
-	Lastmodified   time.Time `xml:"last_modified,attr"`
+	DoctypePk      string `xml:"doctype_pk,omitempty"`
+	Serial         string `xml:"serial,omitempty"`
+	Number         string `xml:"number,omitempty"`
+	DocIssuedate   string `xml:"doc_issuedate,omitempty"`
+	DocIssuePlace  string `xml:"doc_issue_place,omitempty"`
+	DocauthorityPk string `xml:"docauthority_pk,omitempty"`
+	IsDropped      string `xml:"is_dropped,omitempty"`
+	Lastmodified   string `xml:"last_modified,attr"`
 }
