@@ -21,3 +21,8 @@ type MdmHandleRequest struct {
 type MdmAttribute struct {
 	TypeName string
 }
+
+type MappingRequest struct {
+	ApplicationId int32           `valid:"required~Required"`
+	Protocol      ProtocolVersion `valid:"required~Required"`
+}
